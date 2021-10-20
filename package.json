@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "serve": "./node_modules/parcel-bundler/bin/cli.js index.html"
+    "serve": "./node_modules/parcel-bundler/bin/cli.js index.html",
+    "build": "./node_modules/parcel-bundler/bin/cli.js build --out-dir foobar index.html",
+    "start": "./node_modules/parcel-bundler/bin/cli.js serve --out-dir livedist --port 80 index.html"
   },
   "staticFiles": {
     "staticPath": [
